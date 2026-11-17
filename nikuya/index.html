@@ -1,0 +1,550 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex">
+<title>Nikuya no Daidokoro | All-You-Can-Eat A5 Wagyu Yakiniku, Tokyo</title>
+<meta property="og:title" content="Nikuya no Daidokoro · All-You-Can-Eat A5 Wagyu Yakiniku, Tokyo">
+<meta property="og:image" content="img/og.jpg">
+<meta property="og:description" content="All-you-can-eat A4 & A5 Kuroge Wagyu yakiniku from ¥4,500. 9 locations in Tokyo. 100 minutes, up to 134 items, order from your seat.">
+<meta name="description" content="A4・A5黒毛和牛の焼肉食べ放題 ¥4,500〜。東京9店舗。">
+<meta name="theme-color" content="#0E0D0C">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@400;500;700&family=Cormorant+Garamond:wght@500;600;700&family=Zen+Kaku+Gothic+Antique:wght@400;500&family=Noto+Serif+KR:wght@400;700&family=Noto+Serif+SC:wght@400;700&display=swap" rel="stylesheet">
+<style>
+/* ===== スタイルD「炭火」 ─ 公式サイトの黒地に合わせた炭色の面。金は「A5 WAGYU」の判子と星だけ、朱はボタン1色。海外客向けに「ひと目でわかる」タイルと英語主導の文言 ===== */
+:root{--bg:#0E0D0C;--bg2:#161412;--card:#1C1A17;--ink:#F3EEE6;--sub:#B9B1A5;--brand:#B3262C;--brand-ink:#FFFFFF;--gold:#D6B76A;--gold-ink:#1A1206;
+--top-bg:#0E0D0C;--top-ink:#F3EEE6;--footer-bg:#000000;--footer-ink:#F3EEE6;
+--line:rgba(243,238,230,.12);--line2:rgba(243,238,230,.28);
+--serif:"Shippori Mincho B1","Noto Serif KR","Noto Serif SC",serif;--latin:"Cormorant Garamond","Shippori Mincho B1",serif;--sans:"Zen Kaku Gothic Antique","Noto Serif KR","Noto Serif SC",sans-serif;}
+*{box-sizing:border-box;margin:0;padding:0}
+html{background:var(--bg)}
+body{background:var(--bg);color:var(--ink);font-family:var(--serif);-webkit-font-smoothing:antialiased;max-width:480px;margin:0 auto;padding-bottom:92px;position:relative;font-feature-settings:"palt"}
+body.textured::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:0;opacity:.35;background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='220' height='220'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 .06 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>")}
+body>*{position:relative;z-index:1}
+
+.top{position:absolute;top:0;left:0;right:0;z-index:3;display:flex;align-items:center;justify-content:space-between;height:60px;padding:0 14px 0 16px;color:var(--top-ink);background:linear-gradient(to bottom,rgba(14,13,12,.92) 50%,rgba(14,13,12,0))}
+.top .brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:inherit;min-width:0}
+.top{justify-content:flex-start}.top .tools{margin-left:auto}
+.top .logo{height:34px;width:auto;display:block}
+.top .tools{display:flex;align-items:center;gap:8px;flex-shrink:0}
+.share{appearance:none;border:1px solid var(--line2);background:rgba(0,0,0,.45);color:var(--top-ink);width:34px;height:34px;border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer}
+.share svg{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.toast{position:fixed;left:50%;bottom:100px;transform:translateX(-50%) translateY(20px);background:var(--ink);color:var(--bg);font-size:13px;padding:10px 16px;border-radius:2px;opacity:0;pointer-events:none;transition:all .25s;z-index:5}
+.toast.on{opacity:1;transform:translateX(-50%)}
+.lang{position:relative;display:flex;align-items:center;height:34px;border:1px solid var(--line2);background:rgba(0,0,0,.45);border-radius:999px;padding:0 10px;color:var(--top-ink);font-size:12px;font-family:var(--sans)}
+.lang svg{width:14px;height:14px;fill:none;stroke:currentColor;stroke-width:1.8;margin-right:6px}
+.lang select{appearance:none;-webkit-appearance:none;border:0;background:transparent;color:inherit;font:inherit;padding-right:14px;cursor:pointer;outline:none}
+.lang select option{color:#000}
+.lang::after{content:"";position:absolute;right:10px;top:50%;width:6px;height:6px;border-right:1.2px solid currentColor;border-bottom:1.2px solid currentColor;transform:translateY(-70%) rotate(45deg);pointer-events:none}
+
+/* 1画面目：写真スライド＋金の判子「A5 WAGYU」。店名は写真の下の炭地に */
+.stage{position:relative;background:#000;min-height:100svh;display:flex;align-items:center}
+.stage>.hero{width:100%}
+@media (min-height:900px){.stage{min-height:0}}
+.hero{position:relative;background:#000;overflow:hidden}
+.hero.photo{aspect-ratio:4/5;max-height:72svh}
+.hero video,.hero img{width:100%;height:100%;object-fit:cover;display:block}
+.hero.slider .track{display:flex;height:100%;overflow-x:auto;overflow-y:hidden;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;scrollbar-width:none;overscroll-behavior-x:contain}
+.hero.slider .track::-webkit-scrollbar{display:none}
+.hero.slider .slide{position:relative;flex:0 0 100%;width:100%;height:100%;scroll-snap-align:start;scroll-snap-stop:always}
+.hero.slider .slide img,.hero.slider .slide video{width:100%;height:100%;object-fit:cover;display:block;background:#000}
+.hero.slider .slide.video{background:#000 url(img/hero_poster.jpg) center/cover}
+.hero.slider .slide.video::before{content:"";position:absolute;inset:0;background:inherit;filter:blur(18px) brightness(.45);transform:scale(1.1)}
+.hero.slider .slide.video video{position:relative;object-fit:contain}
+.snd{position:absolute;right:14px;bottom:54px;z-index:4;width:38px;height:38px;border-radius:50%;border:1px solid rgba(255,255,255,.35);background:rgba(0,0,0,.5);color:#fff;display:flex;align-items:center;justify-content:center;cursor:pointer}
+.snd svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.snd .w{display:none}.snd .x{display:block}.snd.on .w{display:block}.snd.on .x{display:none}
+.hero.slider .slide::after{content:"";position:absolute;left:0;right:0;bottom:0;height:46%;background:linear-gradient(to top,rgba(14,13,12,.95),rgba(14,13,12,0));pointer-events:none}
+.hero.slider .dots{position:absolute;right:14px;bottom:14px;z-index:3;display:flex;gap:6px;align-items:center;padding:7px 10px;border-radius:999px;background:rgba(0,0,0,.4)}
+.hero.slider .dots i{display:block;width:6px;height:6px;border-radius:50%;background:rgba(255,255,255,.5);transition:transform .2s,background .2s;cursor:pointer}
+.hero.slider .dots i.on{background:#fff;transform:scale(1.25)}
+.hero.slider .cap{position:absolute;left:16px;bottom:16px;z-index:3;font-size:12.5px;letter-spacing:.08em;padding:0 0 0 10px;color:#fff;border-left:2px solid var(--gold);max-width:62%;line-height:1.4;font-family:var(--sans)}
+.hero.auto .bar-progress{position:absolute;left:0;right:0;bottom:0;height:3px;background:rgba(255,255,255,.18);z-index:3}
+.hero.auto .bar-progress i{display:block;height:100%;width:0;background:var(--gold)}
+.hero.auto.running .bar-progress i{animation:prog var(--auto,4s) linear infinite}
+@keyframes prog{from{width:0}to{width:100%}}
+@media (prefers-reduced-motion:reduce){.hero.auto.running .bar-progress i{animation:none}}
+/* 金の判子：唯一の強い要素。「和牛」を目立たせる */
+.seal{display:flex;flex-direction:column;align-items:center;justify-content:center;width:42px;height:42px;border-radius:50%;background:var(--gold);color:var(--gold-ink);transform:rotate(-6deg);box-shadow:0 2px 8px rgba(0,0,0,.45);margin-left:10px;flex-shrink:0}
+.seal{position:relative}.seal::before{content:"";position:absolute;inset:3px;border:1px solid rgba(26,18,6,.55);border-radius:50%;pointer-events:none}
+.seal b{font-family:var(--latin);font-weight:700;font-size:15px;line-height:1;letter-spacing:.02em}
+.seal i{font-style:normal;font-family:var(--sans);font-size:5.5px;letter-spacing:.14em;line-height:1;margin-top:2px;font-weight:500}
+
+/* 見出し帯：A4・A5 WAGYU / ALL YOU CAN EAT を大きく */
+.band{padding:14px 20px 0}
+.band .k{font-family:var(--sans);font-size:11px;letter-spacing:.24em;color:var(--gold);text-transform:uppercase}
+.band .big{margin-top:6px;font-family:var(--latin);font-weight:700;font-size:34px;line-height:1.05;letter-spacing:.01em;color:var(--ink)}
+.band .big span{display:block;font-size:17px;font-weight:600;letter-spacing:.1em;color:var(--sub);margin-top:6px;text-transform:uppercase}
+.band .big span.l1{font-size:32px;font-weight:700;letter-spacing:.01em;color:var(--ink);margin-top:0;text-transform:none;line-height:1.05}
+html[lang="ja"] .band .big span,html[lang="ko"] .band .big span,html[lang="zh-Hans"] .band .big span{font-family:var(--serif);font-size:15px;letter-spacing:.06em;font-weight:500;text-transform:none}
+html[lang="ja"] .band .big span.l1,html[lang="ko"] .band .big span.l1,html[lang="zh-Hans"] .band .big span.l1{font-size:27px;font-weight:700;line-height:1.3}
+
+.head{padding:10px 20px 0}
+.head h1{font-size:18px;font-weight:500;line-height:1.45;letter-spacing:.02em;word-break:keep-all;overflow-wrap:anywhere;color:var(--ink)}
+.head .tag{margin-top:8px;font-size:13.5px;line-height:1.7;letter-spacing:.02em;color:var(--ink)}
+.head .meta{margin-top:6px;font-size:12.5px;color:var(--sub);letter-spacing:.02em}
+
+.badges{display:flex;flex-wrap:wrap;align-items:center;row-gap:6px;padding:14px 20px 0}
+.badge{display:inline-flex;align-items:center;gap:5px;font-size:12.5px;letter-spacing:.02em;padding:0 11px;border-left:1px solid var(--line2);line-height:1.2;color:var(--ink)}
+.badge:first-child{border-left:0;padding-left:0}
+.badge .star{color:var(--gold)}
+.badge.open{color:#7FD39A}
+.badge.closed{color:#E0B072}
+#open-badge:empty{display:none}
+.badges .badge.price{flex-basis:100%;border-left:0;padding-left:0;margin-top:2px;color:var(--ink);font-size:14px;letter-spacing:.04em}
+.badges .badge.price small{font-size:11.5px;color:var(--sub);margin-left:4px}
+
+.cta{display:grid;grid-template-columns:1fr 1fr;gap:10px;padding:16px 20px 18px}
+.btn{display:flex;align-items:center;justify-content:center;gap:7px;height:54px;border-radius:3px;font-size:15.5px;font-weight:500;letter-spacing:.06em;text-decoration:none;font-family:var(--sans)}
+.btn.primary{background:var(--brand);color:var(--brand-ink)}
+.btn.secondary{background:rgba(255,255,255,.04);color:var(--ink);border:1px solid var(--line2)}
+.btn svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+
+section{padding:30px 20px 0}
+section h2{font-size:15px;font-weight:500;letter-spacing:.2em;margin-bottom:14px;display:flex;justify-content:space-between;align-items:baseline;position:relative;padding-top:12px}
+section h2::before{content:"";position:absolute;left:0;top:0;width:22px;height:1.5px;background:var(--gold)}
+section h2 a{font-size:12px;letter-spacing:.04em;color:var(--sub);text-decoration:none;border-bottom:1px solid var(--sub);padding-bottom:1px;font-family:var(--sans)}
+
+/* ひと目でわかる */
+.glance{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.tile{background:var(--card);border:1px solid var(--line);border-radius:3px;padding:12px 12px 11px;display:flex;flex-direction:column;gap:6px;min-height:84px}
+.tile svg{width:20px;height:20px;fill:none;stroke:var(--gold);stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.tile .t{font-size:13px;line-height:1.5;letter-spacing:.02em;color:var(--ink)}
+.tile .s{font-size:11px;color:var(--sub);line-height:1.4;font-family:var(--sans)}
+.tile.wide{grid-column:1/-1;flex-direction:row;align-items:center;min-height:0}
+.tile.wide .t{flex:1}
+.tile.alert{border-color:rgba(214,183,106,.45)}
+
+/* 理由：横に流れる3枚 */
+.pillars{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -20px;padding:0 20px 6px;scrollbar-width:none}
+.pillars::-webkit-scrollbar{display:none}
+.pillar{flex:0 0 78%;scroll-snap-align:start;background:var(--card);border:1px solid var(--line);border-radius:3px;overflow:hidden}
+.pillar img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block}
+.pillar .pb{padding:12px 14px 14px;position:relative}
+.pillar .num{position:absolute;right:12px;top:-16px;width:32px;height:32px;background:var(--gold);color:var(--gold-ink);display:flex;align-items:center;justify-content:center;font-size:14px;border-radius:50%;box-shadow:0 2px 6px rgba(0,0,0,.4);font-family:var(--latin);font-weight:700}
+.pillar .ttl{font-size:15px;font-weight:500;letter-spacing:.04em;line-height:1.5;padding-right:36px;color:var(--ink)}
+.pillar .txt{margin-top:6px;font-size:12.5px;line-height:1.7;color:var(--sub)}
+
+/* コース */
+.menu{display:grid;grid-template-columns:1fr 1fr;gap:22px 14px}
+.menu .item{display:block}
+.menu .item.featured{grid-column:1/-1;display:grid;grid-template-columns:1fr 1.1fr;gap:14px;align-items:center;background:var(--card);border:1px solid rgba(214,183,106,.5);border-radius:3px;padding:12px}
+.menu .item.featured img{margin-bottom:0}
+.menu img{width:100%;aspect-ratio:1;height:auto;object-fit:cover;display:block;border-radius:2px;background:#222;margin-bottom:10px}
+.menu .body{min-width:0}
+.menu .label{display:inline-block;font-family:var(--sans);font-size:10.5px;letter-spacing:.14em;color:var(--gold);border:1px solid var(--gold);padding:2px 6px;border-radius:2px;margin-bottom:6px}
+.menu .label.drink{color:#8FD0E8;border-color:#8FD0E8}
+.menu .name{font-size:14px;font-weight:500;line-height:1.45;letter-spacing:.02em;color:var(--ink)}
+.menu .price{font-size:17px;color:var(--ink);margin-top:4px;letter-spacing:.04em;font-family:var(--latin);font-weight:700}
+.menu .price small{font-size:11px;color:var(--sub);margin-left:3px;font-family:var(--sans);font-weight:400}
+.menu .desc{font-size:11.5px;line-height:1.65;color:var(--sub);margin-top:6px}
+.note{margin-top:14px;font-size:12px;line-height:1.7;color:var(--sub);padding-left:12px;border-left:1px solid var(--gold)}
+
+.topics{display:flex;flex-wrap:wrap;gap:8px}
+.topics span{font-size:12.5px;padding:6px 11px;border:1px solid var(--line2);border-radius:2px;color:var(--ink);letter-spacing:.02em;background:rgba(255,255,255,.03)}
+.topics span b{font-weight:400;color:var(--sub);font-size:11px;margin-left:5px;font-family:var(--sans)}
+
+/* 動画 */
+.vlead{font-size:12px;color:var(--sub);margin:-6px 0 12px;font-family:var(--sans)}
+.reels{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -20px;padding:0 20px 6px;scrollbar-width:none;scroll-padding:0 20px}
+.reels::-webkit-scrollbar{display:none}
+.reel{flex:0 0 62%;scroll-snap-align:start;transition:flex-basis .25s}
+.reel.open{flex:0 0 100%}
+.reel .rwrap{position:relative;aspect-ratio:9/16;background:#111;border-radius:3px;overflow:hidden;border:1px solid var(--line)}
+.reel .rwrap img{width:100%;height:100%;object-fit:cover;display:block}
+.reel .rwrap iframe{position:absolute;inset:0;width:100%;height:100%;border:0;background:#000}
+.reel .rplay{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:56px;height:56px;border:0;border-radius:50%;background:rgba(243,238,230,.92);display:flex;align-items:center;justify-content:center;cursor:pointer;box-shadow:0 4px 14px rgba(0,0,0,.4)}
+.reel .rplay .tri{width:0;height:0;border-left:16px solid #0E0D0C;border-top:10px solid transparent;border-bottom:10px solid transparent;margin-left:4px}
+.reel .rcap{margin-top:8px;font-size:12.5px;line-height:1.5;letter-spacing:.02em;color:var(--ink)}
+.iglink{display:flex;align-items:center;justify-content:center;gap:8px;margin-top:12px;height:46px;border:1px solid var(--line2);border-radius:3px;font-size:14px;letter-spacing:.06em;color:var(--ink);text-decoration:none;background:rgba(255,255,255,.03);font-family:var(--sans)}
+
+.info{font-size:14px;line-height:1.8;color:var(--ink);border-top:1px solid var(--line)}
+.info dt{font-size:11px;color:var(--gold);padding-top:10px;letter-spacing:.14em;font-family:var(--sans);text-transform:uppercase}
+.info dd{padding-bottom:10px;border-bottom:1px solid var(--line)}
+.info dd a{color:inherit;text-decoration:none;border-bottom:1px solid var(--line2)}
+.info dd .jp{display:block;font-size:12.5px;color:var(--sub);margin-top:2px}
+.driver{margin-top:12px;background:#F3EEE6;color:#0E0D0C;border-radius:3px;padding:10px 12px}
+.driver .dl{font-family:var(--sans);font-size:10.5px;letter-spacing:.14em;color:#6B5F4E;text-transform:uppercase}
+.driver .dt{margin-top:4px;font-size:15px;line-height:1.6}
+.map{margin-top:16px;border-radius:2px;overflow:hidden;background:var(--card);border:1px solid var(--line)}
+.map img,.map svg{width:100%;height:220px;border:0;display:block;object-fit:cover}
+.map a{display:block;position:relative;text-decoration:none;color:inherit}
+.map .hint{position:absolute;right:10px;bottom:10px;font-size:11.5px;letter-spacing:.06em;padding:6px 10px;border-radius:2px;background:var(--brand);color:#fff;font-family:var(--sans)}
+.access{margin-top:10px;font-size:12.5px;line-height:1.75;color:var(--sub)}
+.access li{list-style:none;padding-left:14px;position:relative}
+.access li::before{content:"";position:absolute;left:0;top:.65em;width:6px;height:1px;background:var(--gold)}
+
+footer{margin-top:36px;padding:34px 20px 28px;background:var(--footer-bg);color:var(--footer-ink);text-align:center;border-top:1px solid var(--line)}
+footer .flogo{height:44px;width:auto;display:inline-block;margin-bottom:12px}
+footer .ftag{font-size:13px;letter-spacing:.1em}
+footer .fname{margin-top:10px;font-size:11px;opacity:.6;letter-spacing:.1em}
+
+.bar{position:fixed;left:0;right:0;bottom:0;background:rgba(14,13,12,.94);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border-top:1px solid var(--line);padding:10px 20px calc(10px + env(safe-area-inset-bottom));display:grid;grid-template-columns:1fr 1fr;gap:10px;transform:translateY(110%);transition:transform .25s;z-index:4}
+.bar.on{transform:none}
+.bar .btn{height:48px}
+@media (prefers-reduced-motion:reduce){.bar,.toast{transition:none}}
+
+.store-chip{display:inline-flex;align-items:center;gap:6px;margin:8px 0 4px;padding:6px 10px 6px 8px;border:1px solid var(--line2);border-radius:999px;background:rgba(255,255,255,.04);color:var(--ink);font-family:var(--sans);font-size:12.5px;cursor:pointer}
+.store-chip svg{width:14px;height:14px;fill:none;stroke:var(--gold);stroke-width:1.8}
+.store-chip em{font-style:normal;color:var(--gold);margin-left:4px;border-left:1px solid var(--line2);padding-left:8px}
+.sheet-bg{position:fixed;inset:0;background:rgba(0,0,0,.6);z-index:6}
+.sheet{position:fixed;left:50%;bottom:0;transform:translateX(-50%);width:100%;max-width:480px;max-height:80vh;overflow:auto;background:var(--bg2);border-top:1px solid var(--line2);border-radius:14px 14px 0 0;z-index:7;padding:14px 16px calc(16px + env(safe-area-inset-bottom))}
+.sh-head{display:flex;justify-content:space-between;align-items:center;font-size:15px;letter-spacing:.1em;margin-bottom:10px}
+.sh-close{appearance:none;border:0;background:transparent;color:var(--ink);font-size:24px;line-height:1;cursor:pointer}
+.sh-geo{display:flex;align-items:center;gap:8px;width:100%;padding:10px 12px;border:1px solid var(--line2);border-radius:3px;background:rgba(255,255,255,.03);color:var(--ink);font-family:var(--sans);font-size:13px;cursor:pointer;margin-bottom:10px}
+.sh-geo svg{width:16px;height:16px;fill:none;stroke:var(--gold);stroke-width:1.6}
+.sh-list{list-style:none}
+.sh-list li{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:11px 4px;border-top:1px solid var(--line);cursor:pointer}
+.sh-list li .n{font-size:14.5px;color:var(--ink)}
+.sh-list li .a{font-size:11.5px;color:var(--sub);font-family:var(--sans);margin-top:2px}
+.sh-list li .d{font-size:12px;color:var(--gold);font-family:var(--sans);white-space:nowrap}
+.sh-list li.cur .n::after{content:" ✓";color:var(--gold)}
+.map-ph{position:relative;height:220px;background:radial-gradient(ellipse at 50% 55%,#2A2622 0,#1C1A17 70%);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px}
+.map-ph .pin{width:18px;height:18px;border-radius:50% 50% 50% 0;transform:rotate(-45deg);background:var(--brand);box-shadow:0 2px 8px rgba(0,0,0,.5);margin-bottom:6px}
+.map-ph .mp-name{font-size:14px;letter-spacing:.06em;color:var(--ink)}
+.map-ph .mp-sub{font-size:12px;color:var(--sub);font-family:var(--sans);text-align:center;padding:0 20px}
+[hidden]{display:none!important}
+a:focus-visible,button:focus-visible,select:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+</style>
+</head>
+<body class="textured dark">
+
+<div class="top">
+  <a class="brand" href="https://nikuyanodaidokoro.com/" data-ev="site_click" target="_blank" rel="noopener"><img class="logo" src="img/logo.png" alt="肉屋の台所"></a><span class="seal" aria-hidden="true"><b>A5</b><i>WAGYU</i></span>
+  <div class="tools">
+    <button type="button" class="share" id="share" aria-label="share" data-ev="share_click"><svg viewBox="0 0 24 24"><path d="M12 3v12"/><path d="m7 8 5-5 5 5"/><path d="M5 13v6a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-6"/></svg></button>
+    <label class="lang"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg><select id="lang" aria-label="language"><option value="en">English</option><option value="ja">日本語</option><option value="ko">한국어</option><option value="zh">简体中文</option></select></label>
+  </div>
+</div>
+<div class="toast" id="toast" data-en="Link copied" data-ko="링크를 복사했습니다" data-zh="已复制链接">リンクをコピーしました</div>
+
+<div class="stage">
+  <div class="hero photo slider auto" id="hero">
+    <div class="track" id="track">
+      <div class="slide"><img src="img/hero1.jpg" alt="炭火で焼く和牛" ><span class="cap" data-en="Wagyu over the flame" data-ko="숯불에 굽는 와규" data-zh="炭火烤和牛">炭火で焼く和牛</span></div>
+      <div class="slide video"><video id="hv" src="img/hero.mp4" poster="img/hero_poster.jpg" autoplay muted loop playsinline preload="auto"></video><button type="button" class="snd" id="snd" aria-label="sound" data-ev="video_unmute"><svg viewBox="0 0 24 24"><path d="M4 9v6h4l5 4V5L8 9z"/><path class="w" d="M16 9a4 4 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/><path class="x" d="M17 9l4 6M21 9l-4 6"/></svg></button><span class="cap" data-en="A5 wagyu, all you can eat — tap for sound" data-ko="A5 와규 무제한 — 탭하면 소리" data-zh="A5 和牛任点任吃 — 点击开声音">A5和牛食べ放題 — タップで音あり</span></div>
+      <div class="slide"><img src="img/hero2.jpg" alt="A5黒毛和牛" loading="lazy"><span class="cap" data-en="A5 Kuroge Wagyu, cut in-house" data-ko="매장에서 직접 손질한 A5 흑모와규" data-zh="店内现切 A5 黑毛和牛">店内カットのA5黒毛和牛</span></div>
+      <div class="slide"><img src="img/hero3.jpg" alt="肉の盛り合わせ" loading="lazy"><span class="cap" data-en="Up to 134 items, all you can eat" data-ko="최대 134종 무제한" data-zh="最多 134 种 任点任吃">最大134品が食べ放題</span></div>
+      <div class="slide"><img src="img/hero6.jpg" alt="A5和牛盛り合わせ" loading="lazy"><span class="cap" data-en="Marbled wagyu platter" data-ko="마블링 와규 모둠" data-zh="霜降和牛拼盘">霜降り和牛の盛り合わせ</span></div>
+      <div class="slide"><img src="img/hero4.jpg" alt="店内" loading="lazy"><span class="cap" data-en="142 seats on the 7th floor" data-ko="7층 · 142석의 넓은 매장" data-zh="7 楼 · 142 个座位">7F・142席の広い店内</span></div>
+      <div class="slide"><img src="img/hero5.jpg" alt="乾杯" loading="lazy"><span class="cap" data-en="Cheers — drinks from your seat" data-ko="건배 — 자리에서 바로 주문" data-zh="干杯 — 在座位上直接点单">乾杯・席から注文</span></div>
+    </div>
+    <div class="dots" id="dots"><i class="on"></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+  </div>
+  </div>
+
+<div class="band">
+  <div class="k" id="kicker" data-en="Shinjuku · 5 min from JR East Exit" data-ko="신주쿠 · JR 동쪽 출구 도보 5분" data-zh="新宿 · JR 东口步行 5 分钟">新宿 · JR東口 徒歩5分</div>
+  <div class="big"><span class="l1" data-en="A4 · A5 Wagyu Yakiniku" data-ko="A4·A5 와규 야키니쿠" data-zh="A4·A5 和牛烤肉">A4・A5 黒毛和牛焼肉</span><span data-en="All you can eat · from ¥4,500" data-ko="무제한 · ¥4,500부터" data-zh="任点任吃 · ¥4,500 起">食べ放題 ¥4,500〜</span></div>
+</div>
+
+<div class="head">
+  <button type="button" class="store-chip" id="store-chip" style="display:none"><svg viewBox="0 0 24 24"><path d="M12 22s7-6.3 7-12a7 7 0 0 0-14 0c0 5.7 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg><span id="chip-name">新宿東口2号店</span><em data-en="Other locations" data-ko="다른 매장" data-zh="其他门店">他の店舗</em></button>
+  <h1 id="h1" data-en="Nikuya no Daidokoro — Shinjuku East Exit 2nd" data-ko="니쿠야노다이도코로 신주쿠 동쪽출구 2호점" data-zh="肉屋の台所 新宿东口2号店">和牛焼肉食べ放題 肉屋の台所 新宿東口2号店</h1>
+  
+  <button type="button" class="store-chip" id="store-chip2"><svg viewBox="0 0 24 24"><path d="M12 22s7-6.3 7-12a7 7 0 0 0-14 0c0 5.7 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg><span id="chip-name2">新宿東口2号店</span><em data-en="Change location" data-ko="매장 변경" data-zh="切换门店">店舗を変更</em></button>
+  <p class="tag" data-en="Run by a butcher: wagyu is bought whole from contract farms and cut in-house daily, so A5 marbled beef is all-you-can-eat at a fair price. 100 minutes, order from your seat by QR." data-ko="정육점이 직접 운영. 계약 농장에서 통째로 들여와 매일 매장에서 손질하기 때문에, A5 마블링 와규를 합리적인 가격으로 무제한 즐길 수 있습니다. 100분, 자리에서 QR로 주문." data-zh="肉店直营：和牛整块从签约牧场直接采购，每天在店内现切，因此 A5 霜降和牛也能以实惠价格任点任吃。100 分钟，在座位上扫码点单。">肉屋直営。契約ファームから塊で仕入れ、毎日店内で解体・カット。だからA5の霜降り和牛が、納得の価格で食べ放題。100分・席からQRで注文。</p>
+  <p class="meta" id="meta"><span data-en="Yakiniku · All-you-can-eat" data-ko="야키니쿠 · 무제한" data-zh="烤肉 · 任点任吃">焼肉・食べ放題</span>・<span data-en="Seno Bldg. 7F" data-ko="세노빌딩 7층" data-zh="Seno 大楼 7 楼">セノビル7F</span>・<span data-en="Shinjuku-sanchome Sta. 3 min" data-ko="신주쿠산초메역 도보 3분" data-zh="新宿三丁目站步行 3 分钟">新宿三丁目駅 徒歩3分</span></p>
+</div>
+
+<div class="badges">
+  <span class="badge" id="rating-badge"><span class="star">★</span><span data-en="Google 4.6 (724 reviews)" data-ko="Google 4.6 (724 리뷰)" data-zh="Google 4.6（724 条评价）">Google 4.6（724件）</span></span>
+  <span class="badge" id="open-badge" data-hours="12:00〜23:00"></span>
+  <span class="badge price"><span data-en="All-you-can-eat ¥4,500 – ¥10,000" data-ko="무제한 코스 ¥4,500 – ¥10,000" data-zh="任点任吃 ¥4,500 – ¥10,000">食べ放題 ¥4,500〜¥10,000</span><small data-en="per person, tax incl. · drinks separate" data-ko="1인 · 세금 포함 · 음료 별도" data-zh="每人 · 含税 · 饮品另计">お一人様・税込・ドリンク別</small></span>
+</div>
+
+<div class="cta" id="cta">
+  <a class="btn primary" href="https://www.google.com/maps?cid=12858076715589662098" data-ev="map_click" target="_blank" rel="noopener">
+    <svg viewBox="0 0 24 24"><path d="M12 22s7-6.3 7-12a7 7 0 0 0-14 0c0 5.7 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg><span data-en="Open in Maps" data-ko="지도에서 열기" data-zh="在地图中打开">地図で開く</span>
+  </a>
+  <a class="btn secondary" href="https://www.google.com/maps/reserve/v/dine/c/zCuQLhS3YRQ" data-ev="reserve_click" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 11h18"/></svg><span data-en="Reserve a table" data-ko="예약하기" data-zh="预约座位">予約する</span></a>
+</div>
+
+<section>
+  <h2><span data-en="At a glance" data-ko="한눈에 보기" data-zh="一目了然">ひと目でわかる</span></h2>
+  <div class="glance">
+    <div class="tile"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><div class="t" data-en="Open 12:00 – 23:00 daily" data-ko="매일 12:00 – 23:00 영업" data-zh="每天 12:00 – 23:00 营业">毎日 12:00〜23:00 営業</div><div class="s" data-en="Lunch from noon · no closing day" data-ko="점심부터 영업 · 연중무휴" data-zh="午餐起营业 · 全年无休">昼から営業・定休日なし</div></div>
+    <div class="tile"><svg viewBox="0 0 24 24"><path d="M4 12h16"/><path d="M4 12a8 8 0 0 1 16 0"/><path d="M8 12v3M16 12v3M12 12v4"/></svg><div class="t" data-en="100 min · up to 134 items" data-ko="100분 · 최대 134종" data-zh="100 分钟 · 最多 134 种">100分・最大134品</div><div class="s" data-en="Last order 80 min after start" data-ko="라스트 오더는 시작 80분 후" data-zh="开始后 80 分钟最后点单">L.O. は開始80分後</div></div>
+    <div class="tile"><svg viewBox="0 0 24 24"><path d="M13 4a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/><path d="M8 22l3-7 3 3v5"/><path d="M8 11l2.5-3 3.5 1.5L16 13"/><path d="M11 8l-1 5 2 1"/></svg><div class="t" data-en="5 min from JR Shinjuku East Exit" data-ko="JR 신주쿠역 동쪽 출구 도보 5분" data-zh="JR 新宿站东口步行 5 分钟">JR新宿駅東口 徒歩5分</div><div class="s" data-en="Take the elevator to 7F" data-ko="엘리베이터로 7층" data-zh="乘电梯至 7 楼">エレベーターで7Fへ</div></div>
+    <div class="tile"><svg viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M8 8h3v3H8zM13 8h3v3h-3zM8 13h3v3H8zM13 13h1.5M14.5 16H16v-3"/></svg><div class="t" data-en="English & Chinese menu · QR ordering" data-ko="영어·중국어 메뉴 · QR 주문" data-zh="英文·中文菜单 · 扫码点单">英語・中国語メニュー・QR注文</div><div class="s" data-en="Photos on every item" data-ko="모든 메뉴에 사진" data-zh="每道菜都有图片">全品写真つき</div></div>
+    <div class="tile"><svg viewBox="0 0 24 24"><path d="M3 10h18M5 10v9h14v-9"/><path d="M7 10V6a5 5 0 0 1 10 0v4"/></svg><div class="t" data-en="142 seats · groups up to 24" data-ko="142석 · 24명까지 단체 가능" data-zh="142 席 · 可接待 24 人团体">142席・24名まで同席OK</div><div class="s" data-en="Families welcome · kids under 6 free" data-ko="가족 환영 · 미취학 아동 무료" data-zh="欢迎家庭 · 学龄前儿童免费">子供可・未就学児無料</div></div>
+    <div class="tile"><svg viewBox="0 0 24 24"><rect x="2" y="6" width="20" height="12" rx="2"/><path d="M2 10h20"/></svg><div class="t" data-en="Cards, Alipay, WeChat Pay OK" data-ko="카드 · Alipay · WeChat Pay 가능" data-zh="可用信用卡 · 支付宝 · 微信支付">カード・Alipay・WeChat Pay可</div><div class="s" data-en="No service charge" data-ko="서비스 요금 없음" data-zh="无服务费">チャージ料なし</div></div>
+    <div class="tile wide alert"><svg viewBox="0 0 24 24"><path d="M8 3h8l-1 7a3 3 0 0 1-6 0z"/><path d="M12 13v6M8 21h8"/></svg><div class="t" data-en="A drink plan is required with every course: soft drinks +¥500 or alcohol +¥1,500 (all you can drink)." data-ko="모든 코스에 음료 플랜 선택이 필수: 소프트드링크 +¥500 / 주류 +¥1,500 (무제한)." data-zh="所有套餐须加选畅饮：软饮 +¥500 或 酒类 +¥1,500（无限畅饮）。">全コース、ドリンク飲み放題の選択が必須（ソフト+¥500／アルコール+¥1,500）</div></div>
+  </div>
+</section>
+
+<section>
+  <h2><span data-en="Why it's this good for the price" data-ko="이 가격에 이 품질인 이유" data-zh="为什么性价比这么高">この価格で和牛が食べ放題の理由</span></h2>
+  <div class="pillars">
+    <div class="pillar"><img src="img/pillar1.jpg" alt="" loading="lazy"><div class="pb"><span class="num">1</span><div class="ttl" data-en="Bought whole from contract farms" data-ko="계약 농장에서 통째로 매입" data-zh="从签约牧场整头采购">契約ファームから一括仕入れ</div><div class="txt" data-en="Wagyu is purchased in bulk straight from the farm — no middlemen, so the price stays low." data-ko="중간 유통 없이 농장에서 직접 대량 매입해 원가를 낮췄습니다." data-zh="直接从牧场批量采购，省去中间环节，价格自然更低。">中間マージンを省き、農場から直接まとめて仕入れています。</div></div></div>
+    <div class="pillar"><img src="img/pillar2.jpg" alt="" loading="lazy"><div class="pb"><span class="num">2</span><div class="ttl" data-en="Butchered in-house, cut fresh daily" data-ko="자체 정육 장인이 매일 손질" data-zh="店内自有师傅每天现切">自社職人がブロック解体・毎日カット</div><div class="txt" data-en="Our own meat craftsmen break down whole blocks, so rare cuts that cost ¥10,000 elsewhere go into the all-you-can-eat." data-ko="자체 정육 장인이 덩어리째 해체하기 때문에, 고급점에서 1만 엔 하는 희소 부위도 무제한에 포함됩니다." data-zh="自家肉师傅整块分切，高级店卖 1 万日元的稀有部位也放进了任点任吃。">高級店で1万円する希少部位も、自社解体だから食べ放題に。</div></div></div>
+    <div class="pillar"><img src="img/pillar3.jpg" alt="" loading="lazy"><div class="pb"><span class="num">3</span><div class="ttl" data-en="Order from your seat, served fresh" data-ko="자리에서 주문, 바로 제공" data-zh="座位点单，现点现做">席から注文、出来たてを提供</div><div class="txt" data-en="Scan the QR on your table — no buffet line. Up to 5 servings per order; the course starts with a 3-kind wagyu platter." data-ko="테이블 QR로 주문하면 바로 가져다 드립니다. 1회 최대 5인분, 코스 시작과 함께 와규 3종 모둠 제공." data-zh="扫描桌上二维码点单，无需排队取餐。每次最多 5 份；套餐开始先上和牛三种拼盘。">テーブルのQRから注文。1回5品まで、コース開始時に和牛3種盛りをサービス。</div></div></div>
+  </div>
+</section>
+
+<section>
+  <h2><span data-en="Courses &amp; prices" data-ko="코스와 가격" data-zh="套餐与价格">コースと料金</span><a href="https://nikuyanodaidokoro-shinjuku2.com/#course" data-ev="menu_click" target="_blank" rel="noopener" data-en="All 7 courses" data-ko="전체 7개 코스" data-zh="全部 7 个套餐">全7コース</a></h2>
+  <div class="menu">
+    <div class="item featured"><img src="img/menu1.jpg" alt="" loading="lazy"><div class="body"><span class="label" data-en="NO.1 · A5 WAGYU" data-ko="인기 1위 · A5 와규" data-zh="人气第一 · A5 和牛">いちばん人気・A5和牛</span><div class="name" data-en="Nikuya no Daidokoro Course" data-ko="니쿠야노다이도코로 코스" data-zh="肉屋の台所套餐">肉屋の台所コース</div><div class="price">¥6,000<small data-en="100 min · 134 items" data-ko="100분 · 134종" data-zh="100 分钟 · 134 种">100分・134品</small></div><div class="desc" data-en="All-you-can-eat A4 & A5 Kuroge Wagyu: sukiyaki-style wagyu, long short rib, ultra-rare brisket, plus harami steak, beef tongue and sides." data-ko="A4·A5 흑모와규 무제한: 스키야키풍 와규, 갈비, 희소 부위 브리스킷, 하라미 스테이크, 우설, 사이드까지." data-zh="A4·A5 黑毛和牛任点任吃：寿喜烧风和牛、牛肋条、稀有牛胸肉，还有横膈膜牛排、牛舌和各式配菜。">A4・A5黒毛和牛が食べ放題。和牛すき焼き、和牛長カルビ、希少部位ブリスケット、ハラミステーキ、牛タン、サイドまで。</div></div></div>
+    <div class="item"><img src="img/menu2.jpg" alt="" loading="lazy"><div class="body"><div class="name" data-en="Yakiniku Course" data-ko="야키니쿠 코스" data-zh="烤肉套餐">焼肉コース</div><div class="price">¥4,500<small data-en="100 min · 112 items" data-ko="100분 · 112종" data-zh="100 分钟 · 112 种">100分・112品</small></div><div class="desc" data-en="Beef, pork and chicken: wild-cut harami steak, rare brisket skirt, wagyu shabu slices, curry, noodles and desserts." data-ko="소·돼지·닭: 와일드컷 하라미 스테이크, 희소 부위 브리스킷 스커트, 와규 샤브, 카레, 면, 디저트." data-zh="牛·猪·鸡：粗切横膈膜牛排、稀有牛胸腹肉、和牛涮片、咖喱、面食和甜点。">牛・豚・鶏。名物ワイルドカットハラミ、希少部位ブリスケットスカート、和牛出汁しゃぶ、カレー、麺、デザート。</div></div></div>
+    <div class="item"><img src="img/menu3.jpg" alt="" loading="lazy"><div class="body"><span class="label drink" data-en="ALCOHOL INCLUDED" data-ko="주류 무제한 포함" data-zh="含酒类畅饮">アルコール飲み放題つき</span><div class="name" data-en="Shinjuku East Exit Yakiniku Course" data-ko="신주쿠 동쪽출구점 야키니쿠 코스" data-zh="新宿东口店烤肉套餐">新宿東口店焼肉コース</div><div class="price">¥5,000<small data-en="100 min · 90 items" data-ko="100분 · 90종" data-zh="100 分钟 · 90 种">100分・90品</small></div><div class="desc" data-en="Yakiniku course + all-you-can-drink alcohol (no draft beer; add draft for +¥500). Starts with a 3-kind wagyu platter." data-ko="야키니쿠 코스 + 주류 무제한(생맥주 제외, +¥500으로 추가 가능). 와규 3종 모둠으로 시작." data-zh="烤肉套餐 + 酒类畅饮（不含生啤，+¥500 可加）。以和牛三种拼盘开场。">焼肉食べ放題＋アルコール飲み放題（生ビールなし・+¥500で追加可）。和牛3種盛りつき。</div></div></div>
+    <div class="item"><img src="img/menu4.jpg" alt="" loading="lazy"><div class="body"><span class="label drink" data-en="ALCOHOL INCLUDED" data-ko="주류 무제한 포함" data-zh="含酒类畅饮">アルコール飲み放題つき</span><div class="name" data-en="Beef Tongue Party Course" data-ko="우설 연회 코스" data-zh="牛舌宴会套餐">牛タン宴会コース</div><div class="price">¥6,000<small data-en="100 min · 105 items" data-ko="100분 · 105종" data-zh="100 分钟 · 105 种">100分・105品</small></div><div class="desc" data-en="Adds all-you-can-eat beef tongue and harami to the yakiniku line-up, with all-you-can-drink alcohol." data-ko="우설과 하라미가 무제한에 추가된 코스. 주류 무제한 포함." data-zh="在烤肉套餐基础上加入牛舌与横膈膜任点任吃，含酒类畅饮。">牛タンとハラミが食べ放題に加わるコース。アルコール飲み放題つき。</div></div></div>
+    <div class="item"><img src="img/menu5.jpg" alt="" loading="lazy"><div class="body"><div class="name" data-en="Tokusen (Premium) Course" data-ko="특선 코스" data-zh="特选套餐">特選コース</div><div class="price">¥8,500<small data-en="100 min" data-ko="100분" data-zh="100 分钟">100分</small></div><div class="desc" data-en="Wagyu sirloin and thick-cut beef tongue join the all-you-can-eat." data-ko="와규 설로인과 두툼한 우설이 무제한에 포함." data-zh="和牛西冷与厚切牛舌也能任点任吃。">和牛サーロインと厚切り牛タンが食べ放題に。</div></div></div>
+    <div class="item"><img src="img/menu6.jpg" alt="" loading="lazy"><div class="body"><span class="label" data-en="A5 MATSUSAKA" data-ko="A5 마쓰사카규" data-zh="A5 松阪牛">A5松阪牛</span><div class="name" data-en="Kiwami (Ultimate) Course" data-ko="극(極) 코스" data-zh="极致套餐">極みコース</div><div class="price">¥10,000<small data-en="100 min" data-ko="100분" data-zh="100 分钟">100分</small></div><div class="desc" data-en="The top course: A5 Matsusaka beef and other A5 brand wagyu, all you can eat." data-ko="최상위 코스: A5 마쓰사카규와 A5 브랜드 와규 무제한." data-zh="最高级套餐：A5 松阪牛及其他 A5 品牌和牛任点任吃。">最上位コース。A5松阪牛とA5ブランド和牛が食べ放題。</div></div></div>
+  </div>
+  <p class="note" data-en="Prices are per person and include tax. A drink plan (+¥500 soft drinks / +¥1,500 alcohol) is required with every course. Children under elementary age eat free; elementary students ¥1,000 off. Birthday “meat parfait” or “meat cake” available by reservation (+¥1,500)." data-ko="가격은 1인 기준, 세금 포함. 모든 코스에 음료 플랜(소프트 +¥500 / 주류 +¥1,500) 선택이 필수입니다. 미취학 아동 무료, 초등학생 ¥1,000 할인. 생일용 ‘고기 파르페’·‘고기 케이크’는 예약 시 신청(+¥1,500)." data-zh="价格为每人含税。所有套餐须加选畅饮（软饮 +¥500 / 酒类 +¥1,500）。学龄前儿童免费，小学生减 ¥1,000。生日“肉肉芭菲”或“肉肉蛋糕”需预约（+¥1,500）。">価格はお一人様・税込。全コースでドリンク飲み放題（ソフト+¥500／アルコール+¥1,500）の選択が必要です。未就学児無料・小学生¥1,000引き。誕生日の「肉パフェ」「肉ケーキ」は要予約（+¥1,500）。</p>
+</section>
+
+<section id="topics-sec"><h2><span data-en="Often mentioned in reviews" data-ko="리뷰에 자주 나오는 말" data-zh="评价中常提到">クチコミで多い言葉</span></h2><div class="topics"><span><span data-en="All-you-can-eat" data-ko="무제한" data-zh="任点任吃">食べ放題</span><b>79</b></span><span><span data-en="Curry" data-ko="카레" data-zh="咖喱">カレー</span><b>25</b></span><span><span data-en="Fast service" data-ko="빠른 서빙" data-zh="上菜快">提供スピード</span><b>16</b></span><span><span data-en="Wide selection" data-ko="다양한 선택" data-zh="种类丰富">選べる種類</span><b>16</b></span><span><span data-en="QR ordering" data-ko="QR 주문" data-zh="扫码点单">QRコード注文</span><b>11</b></span><span><span data-en="Seafood" data-ko="해산물" data-zh="海鲜">海鮮</span><b>10</b></span><span><span data-en="Kobe beef" data-ko="고베규" data-zh="神户牛">神戸牛</span><b>8</b></span><span><span data-en="Egg over rice (TKG)" data-ko="계란밥(TKG)" data-zh="生鸡蛋拌饭(TKG)">卵かけご飯</span><b>7</b></span></div></section>
+
+<section>
+  <h2><span data-en="Videos" data-ko="동영상" data-zh="视频">動画</span><a href="https://www.instagram.com/nikuya_official/" data-ev="ig_click" target="_blank" rel="noopener" data-en="Instagram" data-ko="Instagram" data-zh="Instagram">Instagram</a></h2>
+  <p class="vlead" data-en="Tap a video to play. Swipe for more." data-ko="영상을 탭하면 재생됩니다. 옆으로 넘겨 더 보기." data-zh="点击视频播放，左右滑动查看更多。">タップで再生・横にスワイプで次の動画</p>
+  <div class="reels" id="reels">
+    <div class="reel" data-code="DXokwveSj3z"><div class="rwrap"><img src="img/reel1.jpg" alt="" loading="lazy"><button type="button" class="rplay" aria-label="play" data-ev="video_play"><span class="tri"></span></button></div><div class="rcap" data-en="A5 wagyu, all you can eat" data-ko="A5 와규 무제한" data-zh="A5 和牛任点任吃">A5和牛が食べ放題</div></div>
+    <div class="reel" data-code="DV-SDf-EUqG"><div class="rwrap"><img src="img/reel2.jpg" alt="" loading="lazy"><button type="button" class="rplay" aria-label="play" data-ev="video_play"><span class="tri"></span></button></div><div class="rcap" data-en="The “meat parfait” for birthdays" data-ko="생일엔 ‘고기 파르페’" data-zh="生日限定“肉肉芭菲”">誕生日は「肉パフェ」</div></div>
+    <div class="reel" data-code="DMKUQO4SKnq"><div class="rwrap"><img src="img/reel3.jpg" alt="" loading="lazy"><button type="button" class="rplay" aria-label="play" data-ev="video_play"><span class="tri"></span></button></div><div class="rcap" data-en="Thick-cut beef tongue on the grill" data-ko="두툼한 우설을 숯불에" data-zh="厚切牛舌上炭火">厚切り牛タンを炭火で</div></div>
+  </div>
+  <a class="iglink" href="https://www.instagram.com/nikuya_official/" data-ev="ig_click" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" style="width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg><span data-en="See more on Instagram" data-ko="Instagram에서 보기" data-zh="在 Instagram 查看更多">Instagramで見る</span></a>
+</section>
+
+<section>
+  <h2><span id="info-h" data-en="Getting here" data-ko="오시는 길" data-zh="交通信息">店舗情報・アクセス</span></h2>
+  <dl class="info">
+    <dt data-en="Address" data-ko="주소" data-zh="地址">住所</dt><dd id="addr"><span data-en="Seno Bldg. 7F, 3-18-4 Shinjuku, Shinjuku-ku, Tokyo 160-0022" data-ko="도쿄도 신주쿠구 신주쿠 3-18-4 세노빌딩 7F (160-0022)" data-zh="东京都新宿区新宿3-18-4 Seno大楼 7F（〒160-0022）">東京都新宿区新宿3-18-4 セノビル7F</span></dd>
+    <dt data-en="Hours" data-ko="영업시간" data-zh="营业时间">営業時間</dt><dd><span id="hours">12:00〜23:00</span><span class="jp" id="hours-note" data-en="Open daily · last course start 21:20 (100 min)" data-ko="연중무휴 · 코스 마지막 시작 21:20 (100분)" data-zh="全年无休 · 套餐最晚 21:20 开始（100 分钟）">定休日なし・コース最終スタート 21:20（100分）</span></dd>
+    <dt data-en="Phone" data-ko="전화" data-zh="电话">電話</dt><dd><a id="phone-a" href="tel:+81362748700" data-ev="phone_click">+81-3-6274-8700</a><span class="jp" id="phone-jp">03-6274-8700</span></dd>
+  </dl>
+  <div class="driver"><div class="dl" data-en="Show this to your taxi driver" data-ko="택시 기사님께 보여주세요" data-zh="可出示给出租车司机">タクシーの運転手さんに見せてください</div><div class="dt" id="driver-text">新宿区新宿3-18-4 セノビル7F<br>肉屋の台所 新宿東口2号店</div></div>
+  <div class="map"><a id="map-a" href="https://www.google.com/maps?cid=12858076715589662098" data-ev="map_click" target="_blank" rel="noopener">
+    <svg id="map-svg" viewBox="0 0 440 220" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="map">
+      <rect width="440" height="220" fill="#1C1A17"/>
+      <!-- 新宿通り（東西） -->
+      <rect x="0" y="118" width="440" height="22" fill="#2B2824"/>
+      <!-- 明治通り（南北・右） -->
+      <rect x="330" y="0" width="22" height="220" fill="#2B2824"/>
+      <!-- 靖国通り（上） -->
+      <rect x="0" y="22" width="440" height="16" fill="#262320"/>
+      <!-- JR線路（左） -->
+      <rect x="40" y="0" width="34" height="220" fill="#23201D"/>
+      <line x1="57" y1="0" x2="57" y2="220" stroke="#3A3631" stroke-width="2" stroke-dasharray="8 6"/>
+      <text x="57" y="206" fill="#8E867A" font-size="9" text-anchor="middle" font-family="Zen Kaku Gothic Antique,sans-serif">JR</text>
+      <text x="220" y="133" fill="#8E867A" font-size="9.5" text-anchor="middle" font-family="Zen Kaku Gothic Antique,sans-serif" letter-spacing="2">SHINJUKU-DORI</text>
+      <text x="341" y="100" fill="#8E867A" font-size="9" text-anchor="middle" font-family="Zen Kaku Gothic Antique,sans-serif" transform="rotate(-90 341 100)" letter-spacing="2">MEIJI-DORI</text>
+      <text x="220" y="34" fill="#8E867A" font-size="9" text-anchor="middle" font-family="Zen Kaku Gothic Antique,sans-serif" letter-spacing="2">YASUKUNI-DORI</text>
+      <!-- 伊勢丹 -->
+      <rect x="262" y="70" width="60" height="42" fill="#242119" stroke="#3A3631"/>
+      <text x="292" y="95" fill="#8E867A" font-size="8.5" text-anchor="middle" font-family="Zen Kaku Gothic Antique,sans-serif">ISETAN</text>
+      <!-- 新宿駅東口 -->
+      <circle cx="90" cy="129" r="7" fill="#1C1A17" stroke="#F3EEE6" stroke-width="2"/>
+      <text x="100" y="160" fill="#F3EEE6" font-size="10" font-family="Zen Kaku Gothic Antique,sans-serif">JR Shinjuku Sta.</text>
+      <text x="100" y="172" fill="#B9B1A5" font-size="9" font-family="Zen Kaku Gothic Antique,sans-serif">East Exit</text>
+      <!-- 新宿三丁目駅 -->
+      <circle cx="341" cy="129" r="7" fill="#1C1A17" stroke="#F3EEE6" stroke-width="2"/>
+      <text x="356" y="160" fill="#F3EEE6" font-size="10" font-family="Zen Kaku Gothic Antique,sans-serif">Shinjuku-</text>
+      <text x="356" y="172" fill="#F3EEE6" font-size="10" font-family="Zen Kaku Gothic Antique,sans-serif">sanchome Sta.</text>
+      <!-- 経路 -->
+      <path d="M90 129 H 200 V 98 H 218" fill="none" stroke="#D6B76A" stroke-width="2.5" stroke-dasharray="6 5" stroke-linecap="round"/>
+      <!-- 店舗ピン -->
+      <path d="M224 70 c-9 0 -15 7 -15 15 c0 11 15 25 15 25 s15 -14 15 -25 c0 -8 -6 -15 -15 -15z" fill="#B3262C"/>
+      <circle cx="224" cy="85" r="5" fill="#fff"/>
+      <text x="224" y="60" fill="#F3EEE6" font-size="11" text-anchor="middle" font-family="Zen Kaku Gothic Antique,sans-serif" font-weight="500">Nikuya no Daidokoro · 7F</text>
+      <text x="150" y="92" fill="#D6B76A" font-size="9" text-anchor="middle" font-family="Zen Kaku Gothic Antique,sans-serif">5 min walk</text>
+    </svg>
+    <div class="map-ph" id="map-ph" hidden><div class="pin"></div><div class="mp-name" id="mp-name"></div><div class="mp-sub" id="mp-sub"></div></div>
+    <span class="hint" data-en="Open in Maps" data-ko="지도에서 열기" data-zh="在地图中打开">地図で開く</span></a></div>
+  <ul class="access" id="access">
+    <li data-en="JR Shinjuku Sta. East Exit — about 5 min on foot. Walk east along Shinjuku-dori towards Isetan; the Seno Building is on the left before Isetan. Take the elevator to the 7th floor." data-ko="JR 신주쿠역 동쪽 출구에서 도보 약 5분. 신주쿠도리를 따라 이세탄 방향(동쪽)으로 걷다가 이세탄 직전 왼쪽 세노빌딩. 엘리베이터로 7층." data-zh="JR 新宿站东口步行约 5 分钟。沿新宿通往伊势丹方向（东）走，伊势丹之前左手边的 Seno 大楼，乘电梯至 7 楼。">JR新宿駅東口から徒歩約5分。新宿通りを伊勢丹方面（東）へ、伊勢丹の手前左手のセノビル。エレベーターで7Fへ。</li>
+    <li data-en="Tokyo Metro / Toei “Shinjuku-sanchome” Sta. — about 3 min on foot. Underground passage Exit 19 is right by the building." data-ko="도쿄메트로·도에이 ‘신주쿠산초메’역에서 도보 약 3분. 지하통로 19번 출구 바로 앞." data-zh="东京地铁·都营“新宿三丁目”站步行约 3 分钟。地下通道 19 号出口即到。">東京メトロ・都営「新宿三丁目」駅から徒歩約3分。地下通路19番出口を出てすぐ。</li>
+    <li data-en="Open from noon — handy for a late lunch or an early dinner before the evening rush (busiest 18:00–21:00 on weekends)." data-ko="정오부터 영업 — 늦은 점심이나 이른 저녁에 편리 (주말 18~21시가 가장 붐빕니다)." data-zh="中午起营业，适合晚一点的午餐或早一点的晚餐（周末 18:00–21:00 最繁忙）。">昼12時から営業。遅めのランチや早めのディナーにも（週末18〜21時が最も混雑）。</li>
+  </ul>
+</section>
+
+<footer>
+  <img class="flogo" src="img/logo.png" alt="">
+  <div class="ftag" data-en="A4 · A5 Wagyu, all you can eat — from the butcher's kitchen" data-ko="A4·A5 와규 무제한 — 정육점의 부엌에서" data-zh="A4·A5 和牛任点任吃 — 来自肉店的厨房">A4・A5の厳選和牛を、リーズナブルな食べ放題で</div>
+  <div class="fname" id="fname">和牛焼肉食べ放題 肉屋の台所 新宿東口2号店 · Nikuya no Daidokoro Shinjuku East Exit 2nd</div>
+</footer>
+
+<div class="sheet-bg" id="sheet-bg" hidden></div>
+<div class="sheet" id="sheet" hidden role="dialog" aria-modal="true">
+  <div class="sh-head"><span data-en="Choose a location" data-ko="매장 선택" data-zh="选择门店">店舗を選ぶ</span><button type="button" class="sh-close" id="sh-close" aria-label="close">×</button></div>
+  <button type="button" class="sh-geo" id="sh-geo"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3"/><circle cx="12" cy="12" r="8"/></svg><span data-en="Use my location to find the nearest" data-ko="내 위치로 가까운 매장 찾기" data-zh="使用我的位置查找最近门店">現在地から近い順に並べる</span></button>
+  <ul class="sh-list" id="sh-list"></ul>
+</div>
+<div class="bar" id="bar">
+  <a class="btn primary" href="https://www.google.com/maps?cid=12858076715589662098" data-ev="map_click" target="_blank" rel="noopener"><span data-en="Open in Maps" data-ko="지도에서 열기" data-zh="在地图中打开">地図で開く</span></a>
+  <a class="btn secondary" href="https://www.google.com/maps/reserve/v/dine/c/zCuQLhS3YRQ" data-ev="reserve_click" target="_blank" rel="noopener"><span data-en="Reserve a table" data-ko="예약하기" data-zh="预约座位">予約する</span></a>
+</div>
+
+<script>
+(function(){
+  var STORE='nikuya-shinjuku2';
+  var STORES=[{"slug": "shinjuku2", "ja": "新宿東口2号店", "en": "Shinjuku East Exit 2nd", "ko": "신주쿠 동쪽출구 2호점", "zh": "新宿东口2号店", "addr_ja": "東京都新宿区新宿3-18-4 セノビル7F", "addr_en": "Seno Bldg. 7F, 3-18-4 Shinjuku, Shinjuku-ku, Tokyo 160-0022", "zip": "160-0022", "phone": "03-6274-8700", "tel": "+81362748700", "hours": "12:00〜23:00", "hours_note_ja": "定休日なし", "hours_note_en": "Open daily", "cid": "12858076715589662098", "lat": 35.6922778, "lng": 139.7024135, "reserve": "https://www.google.com/maps/reserve/v/dine/c/zCuQLhS3YRQ", "seats": 142, "access_ja": ["JR新宿駅東口から徒歩約5分。新宿通りを伊勢丹方面へ、伊勢丹手前左手のセノビル。エレベーターで7Fへ。", "東京メトロ・都営「新宿三丁目」駅から徒歩約3分。"], "access_en": ["About 5 min on foot from JR Shinjuku Sta. East Exit. Walk along Shinjuku-dori towards Isetan; Seno Bldg. is on the left before Isetan. Elevator to 7F.", "About 3 min from Shinjuku-sanchome Sta. (Tokyo Metro / Toei)."], "meta_ja": "セノビル7F・新宿三丁目駅 徒歩3分", "meta_en": "Seno Bldg. 7F · Shinjuku-sanchome Sta. 3 min", "rating": "4.6", "reviews": "724"}, {"slug": "shinjuku", "ja": "新宿店", "en": "Shinjuku (Kabukicho)", "ko": "신주쿠점", "zh": "新宿店", "addr_ja": "東京都新宿区歌舞伎町1-6-14 第2ショーリビル2F", "addr_en": "Dai-2 Shori Bldg. 2F, 1-6-14 Kabukicho, Shinjuku-ku, Tokyo 160-0021", "zip": "160-0021", "phone": "050-3187-4197", "tel": "+815031874197", "hours": "12:00〜23:00", "hours_note_ja": "ランチ12:00〜15:00（L.O.14:30）／ディナー15:00〜23:00（L.O.22:30）", "hours_note_en": "Lunch 12:00–15:00 (L.O. 14:30) · Dinner 15:00–23:00 (L.O. 22:30)", "cid": "11479817190024571437", "lat": 35.6936825, "lng": 139.7029733, "reserve": "https://booking.ebica.jp/webrsv/search/e014039601/17822?isfixshop=true", "seats": 100, "access_ja": ["JR新宿駅東口から徒歩約5分。ALTA脇の道を直進し靖国通りを渡り、ドン・キホーテ側を右へ。"], "access_en": ["About 5 min from JR Shinjuku Sta. East Exit. Cross Yasukuni-dori toward Don Quijote; the building is on the lane with the Seven Bank ATM. 2F."], "meta_ja": "歌舞伎町・新宿駅東口 徒歩5分", "meta_en": "Kabukicho · 5 min from Shinjuku Sta. East Exit"}, {"slug": "ginza", "ja": "Ginza Premium", "en": "Ginza Premium", "ko": "긴자 프리미엄", "zh": "银座 Premium", "addr_ja": "東京都中央区銀座7-12-4 友野本社ビル1F", "addr_en": "Tomono Honsha Bldg. 1F, 7-12-4 Ginza, Chuo-ku, Tokyo 104-0061", "zip": "104-0061", "phone": "03-3545-0707", "tel": "+81335450707", "hours": "12:00〜23:00", "hours_note_ja": "L.O.22:30・定休日なし", "hours_note_en": "L.O. 22:30 · Open daily", "cid": "6218403581437500298", "lat": 35.6683633, "lng": 139.7642296, "reserve": "https://booking.ebica.jp/webrsv/search/e014039601/34644?isfixshop=true", "seats": 38, "access_ja": ["東銀座駅A1出口から徒歩5分、銀座駅A3出口から徒歩6分、新橋駅汐留口から徒歩9分。"], "access_en": ["5 min from Higashi-Ginza Sta. Exit A1 · 6 min from Ginza Sta. Exit A3 · 9 min from Shimbashi Sta."], "meta_ja": "銀座・東銀座駅 徒歩5分", "meta_en": "Ginza · 5 min from Higashi-Ginza Sta."}, {"slug": "gotanda", "ja": "五反田店", "en": "Gotanda", "ko": "고탄다점", "zh": "五反田店", "addr_ja": "東京都品川区西五反田1-5-2 トラヤビル4F", "addr_en": "Toraya Bldg. 4F, 1-5-2 Nishi-Gotanda, Shinagawa-ku, Tokyo 141-0031", "zip": "141-0031", "phone": "050-3172-5301", "tel": "+815031725301", "hours": "12:00〜23:00", "hours_note_ja": "平日はランチ12:00〜15:00／ディナー16:00〜23:00（L.O.22:30）", "hours_note_en": "Weekdays: lunch 12:00–15:00, dinner 16:00–23:00 (L.O. 22:30). Weekends 12:00–23:00", "cid": "9566845038989951723", "lat": 35.6254686, "lng": 139.7235796, "reserve": "https://booking.ebica.jp/webrsv/search/e014039601/17831?isfixshop=true", "seats": 108, "access_ja": ["五反田駅西口から徒歩1分。"], "access_en": ["1 min from Gotanda Sta. West Exit. 4F."], "meta_ja": "五反田駅西口 徒歩1分", "meta_en": "1 min from Gotanda Sta."}, {"slug": "shibuya-dogenzaka", "ja": "渋谷道玄坂店", "en": "Shibuya Dogenzaka", "ko": "시부야 도겐자카점", "zh": "涩谷道玄坂店", "addr_ja": "東京都渋谷区道玄坂2-25-17 カスミビル3F", "addr_en": "Kasumi Bldg. 3F, 2-25-17 Dogenzaka, Shibuya-ku, Tokyo 150-0043", "zip": "150-0043", "phone": "050-3138-2095", "tel": "+815031382095", "hours": "12:00〜23:00", "hours_note_ja": "平日は13:00〜23:00（L.O.22:30）", "hours_note_en": "Weekdays 13:00–23:00, weekends 12:00–23:00 (L.O. 22:30)", "cid": "799068617536808917", "lat": 35.659583, "lng": 139.6976588, "reserve": "https://booking.ebica.jp/webrsv/search/e014039601/17823?isfixshop=true", "seats": 52, "access_ja": ["JR・東急・京王井の頭線・地下鉄 渋谷駅から徒歩5分。"], "access_en": ["5 min from Shibuya Sta. (JR / Tokyu / Keio / Metro), up Dogenzaka. 3F."], "meta_ja": "渋谷駅 徒歩5分", "meta_en": "5 min from Shibuya Sta."}, {"slug": "shibuya-miyamasuzaka", "ja": "渋谷宮益坂店", "en": "Shibuya Miyamasuzaka", "ko": "시부야 미야마스자카점", "zh": "涩谷宫益坂店", "addr_ja": "東京都渋谷区渋谷1-25-6 渋谷パークサイド共同ビル5F", "addr_en": "Shibuya Parkside Kyodo Bldg. 5F, 1-25-6 Shibuya, Shibuya-ku, Tokyo 150-0002", "zip": "150-0002", "phone": "050-3172-5309", "tel": "+815031725309", "hours": "12:00〜23:00", "hours_note_ja": "ランチ12:00〜15:00（L.O.14:30）／ディナー15:00〜23:00（L.O.22:30）", "hours_note_en": "Lunch 12:00–15:00 (L.O. 14:30) · Dinner 15:00–23:00 (L.O. 22:30)", "cid": "10363252934106939638", "lat": 35.659629, "lng": 139.701511, "reserve": "https://booking.ebica.jp/webrsv/search/e014039601/17824?isfixshop=true", "seats": 100, "access_ja": ["JR渋谷駅ハチ公口から徒歩1分、東京メトロ渋谷駅A7b出口すぐ。"], "access_en": ["1 min from JR Shibuya Sta. Hachiko Exit · right by Metro Exit A7b. 5F."], "meta_ja": "渋谷駅ハチ公口 徒歩1分", "meta_en": "1 min from Shibuya Sta. Hachiko Exit"}, {"slug": "iidabashi", "ja": "飯田橋店", "en": "Iidabashi", "ko": "이다바시점", "zh": "饭田桥店", "addr_ja": "東京都千代田区飯田橋4-9-8 飯田橋プラザ8F", "addr_en": "Iidabashi Plaza 8F, 4-9-8 Iidabashi, Chiyoda-ku, Tokyo 102-0072", "zip": "102-0072", "phone": "050-3172-4718", "tel": "+815031724718", "hours": "12:00〜23:00", "hours_note_ja": "ランチ12:00〜15:00（L.O.14:30）／ディナー15:00〜23:00（L.O.22:30）", "hours_note_en": "Lunch 12:00–15:00 (L.O. 14:30) · Dinner 15:00–23:00 (L.O. 22:30)", "cid": "3790562100717791509", "lat": 35.701528, "lng": 139.745223, "reserve": "https://booking.ebica.jp/webrsv/search/e014039601/17828?isfixshop=true", "seats": 100, "access_ja": ["JR飯田橋駅東口から30秒、地下鉄A4出口から30秒。"], "access_en": ["30 sec from JR Iidabashi Sta. East Exit · 30 sec from Metro Exit A4. 8F."], "meta_ja": "飯田橋駅東口 30秒", "meta_en": "30 sec from Iidabashi Sta."}, {"slug": "ueno", "ja": "上野店", "en": "Ueno", "ko": "우에노점", "zh": "上野店", "addr_ja": "東京都台東区上野6-14-7 ベリタス岡埜栄泉ビル7F", "addr_en": "Veritas Okano Eisen Bldg. 7F, 6-14-7 Ueno, Taito-ku, Tokyo 110-0005", "zip": "110-0005", "phone": "050-3172-5085", "tel": "+815031725085", "hours": "12:00〜23:00", "hours_note_ja": "ランチ12:00〜15:00（L.O.14:30）／ディナー15:00〜23:00（L.O.22:30）", "hours_note_en": "Lunch 12:00–15:00 (L.O. 14:30) · Dinner 15:00–23:00 (L.O. 22:30)", "cid": "18330822691881822043", "lat": 35.7113473, "lng": 139.7756144, "reserve": "https://booking.ebica.jp/webrsv/search/e014039601/17827?isfixshop=true", "seats": 70, "access_ja": ["JR上野駅・地下鉄各線から徒歩1分、御徒町駅から徒歩8分。"], "access_en": ["1 min from JR Ueno Sta. (and Metro) · 8 min from Okachimachi Sta. 7F."], "meta_ja": "上野駅 徒歩1分", "meta_en": "1 min from Ueno Sta."}, {"slug": "ueno-koenmae", "ja": "上野公園前店", "en": "Ueno Park", "ko": "우에노공원앞점", "zh": "上野公园前店", "addr_ja": "東京都台東区上野4-9-6 ナガフジビル7F", "addr_en": "Nagafuji Bldg. 7F, 4-9-6 Ueno, Taito-ku, Tokyo 110-0005", "zip": "110-0005", "phone": "050-3172-4945", "tel": "+815031724945", "hours": "12:00〜23:00", "hours_note_ja": "平日はランチ12:00〜15:00／ディナー16:00〜23:00（L.O.22:30）", "hours_note_en": "Weekdays: lunch 12:00–15:00, dinner 16:00–23:00 (L.O. 22:30). Weekends 12:00–23:00", "cid": "14189666644672347975", "lat": 35.7101779, "lng": 139.7740539, "reserve": "https://booking.ebica.jp/webrsv/search/e014039601/20754?isfixshop=true", "seats": 124, "access_ja": ["京成上野駅から徒歩1分、上野御徒町駅から徒歩2分、JR上野駅不忍口から徒歩3分。"], "access_en": ["1 min from Keisei-Ueno Sta. · 2 min from Ueno-Okachimachi Sta. · 3 min from JR Ueno Sta. Shinobazu Exit. 7F."], "meta_ja": "京成上野駅 徒歩1分", "meta_en": "1 min from Keisei-Ueno Sta."}];
+  var CUR=STORES[0];
+  function tr(o,k){ var l=(window.__LANG||'en'); return o[k+'_'+l]||o[k+'_en']||o[k+'_ja']||o[k]||''; }
+  function nameOf(st){ var l=(window.__LANG||'en'); return st[l]||st.en; }
+  function applyStore(st){
+    CUR=st; STORE='nikuya-'+st.slug; window.__STORE=st.slug;
+    var l=(window.__LANG||'en');
+    var brand={ja:'和牛焼肉食べ放題 肉屋の台所 ',en:'Nikuya no Daidokoro — ',ko:'니쿠야노다이도코로 ',zh:'肉屋の台所 '};
+    var h1=document.getElementById('h1'); h1.textContent=({ja:'和牛焼肉食べ放題 肉屋の台所',en:'Nikuya no Daidokoro — Wagyu Yakiniku',ko:'니쿠야노다이도코로 — 와규 야키니쿠',zh:'肉屋の台所 — 和牛烤肉'})[l]||'Nikuya no Daidokoro';
+    var ih=document.getElementById('info-h'); if(ih) ih.textContent=({ja:'店舗情報・アクセス：',en:'Getting here: ',ko:'오시는 길: ',zh:'交通信息：'})[l]+nameOf(st);
+    document.getElementById('chip-name').textContent=nameOf(st); var c2=document.getElementById('chip-name2'); if(c2) c2.textContent=nameOf(st);
+    var kk=document.getElementById('kicker'); if(kk){ kk.textContent=nameOf(st)+' · '+(l==='ja'?st.meta_ja:st.meta_en); }
+    var meta=document.getElementById('meta'); if(meta){ meta.textContent=(l==='ja'?'焼肉・食べ放題・':'Yakiniku · All-you-can-eat · ')+(l==='ja'?st.meta_ja:st.meta_en); }
+    var rb=document.getElementById('rating-badge'); if(rb){ rb.hidden=!st.rating; }
+    var addr=document.getElementById('addr'); if(addr){ addr.textContent=(l==='ja'?st.addr_ja:st.addr_en); }
+    document.getElementById('hours').textContent=st.hours;
+    document.getElementById('hours-note').textContent=(l==='ja'?st.hours_note_ja:st.hours_note_en);
+    var pa=document.getElementById('phone-a'); pa.href='tel:'+st.tel; pa.textContent='+81-'+st.phone.replace(/^0/,'').replace(/-/g,'-'); document.getElementById('phone-jp').textContent=st.phone;
+    document.getElementById('driver-text').innerHTML=st.addr_ja.replace('東京都','')+'<br>肉屋の台所 '+st.ja;
+    var murl='https://www.google.com/maps?cid='+st.cid;
+    document.querySelectorAll('a[data-ev="map_click"]').forEach(function(a){ a.href=murl; });
+    document.querySelectorAll('a[data-ev="reserve_click"]').forEach(function(a){ a.href=st.reserve; });
+    var svg=document.getElementById('map-svg'), ph=document.getElementById('map-ph');
+    if(st.slug==='shinjuku2'){ svg.style.display=''; ph.hidden=true; } else { svg.style.display='none'; ph.hidden=false; document.getElementById('mp-name').textContent='肉屋の台所 '+nameOf(st); document.getElementById('mp-sub').textContent=(l==='ja'?st.meta_ja:st.meta_en); }
+    var ac=document.getElementById('access'); ac.innerHTML=''; (l==='ja'?st.access_ja:st.access_en).forEach(function(t){ var li=document.createElement('li'); li.textContent=t; ac.appendChild(li); });
+    var ts=document.getElementById('topics-sec'); if(ts) ts.hidden=(st.slug!=='shinjuku2');
+    document.getElementById('fname').textContent='和牛焼肉食べ放題 肉屋の台所 '+st.ja+' · Nikuya no Daidokoro '+st.en;
+    var ob=document.getElementById('open-badge'); if(ob) ob.setAttribute('data-hours',st.hours);
+    if(window.__renderOpen) window.__renderOpen();
+    document.querySelectorAll('#sh-list li').forEach(function(li){ li.classList.toggle('cur',li.getAttribute('data-slug')===st.slug); });
+    try{ var lm=location.search.match(/[?&]lang=([a-z]{2})/); history.replaceState(null,'',location.pathname+'?s='+st.slug+(lm?'&lang='+lm[1]:'')); }catch(e){}
+  }
+  function dist(a,b,c,d){ var R=6371,x=(c-a)*Math.PI/180,y=(d-b)*Math.PI/180;var h=Math.sin(x/2)*Math.sin(x/2)+Math.cos(a*Math.PI/180)*Math.cos(c*Math.PI/180)*Math.sin(y/2)*Math.sin(y/2);return 2*R*Math.asin(Math.sqrt(h)); }
+  var sheet=document.getElementById('sheet'), sbg=document.getElementById('sheet-bg'), slist=document.getElementById('sh-list');
+  function renderList(pos){
+    var l=(window.__LANG||'en'); var arr=STORES.slice();
+    if(pos){ arr.forEach(function(st){ st._d=dist(pos.lat,pos.lng,st.lat,st.lng); }); arr.sort(function(a,b){return a._d-b._d;}); }
+    slist.innerHTML='';
+    arr.forEach(function(st){ var li=document.createElement('li'); li.setAttribute('data-slug',st.slug); li.className=(st.slug===CUR.slug?'cur':'');
+      li.innerHTML='<div><div class="n">'+nameOf(st)+'</div><div class="a">'+(l==='ja'?st.meta_ja:st.meta_en)+'</div></div>'+(st._d!=null?'<span class="d">'+(st._d<1?Math.round(st._d*1000)+' m':st._d.toFixed(1)+' km')+'</span>':'');
+      li.addEventListener('click',function(){ applyStore(st); closeSheet(); try{ if(window.gtag) gtag('event','store_pick',{store:'nikuya-'+st.slug}); }catch(e){} });
+      slist.appendChild(li); });
+  }
+  function openSheet(){ renderList(window.__POS||null); sheet.hidden=false; sbg.hidden=false; }
+  function closeSheet(){ sheet.hidden=true; sbg.hidden=true; }
+  document.getElementById('store-chip').addEventListener('click',openSheet); document.getElementById('store-chip2').addEventListener('click',openSheet);
+  document.getElementById('sh-close').addEventListener('click',closeSheet); sbg.addEventListener('click',closeSheet);
+  function locate(cb){ if(!navigator.geolocation){ cb(null); return; } navigator.geolocation.getCurrentPosition(function(p){ window.__POS={lat:p.coords.latitude,lng:p.coords.longitude}; cb(window.__POS); },function(){ cb(null); },{timeout:6000,maximumAge:300000}); }
+  document.getElementById('sh-geo').addEventListener('click',function(){ locate(function(pos){ renderList(pos); }); });
+  window.__applyStore=applyStore;
+  var LANGS=["ja", "en", "ko", "zh"];
+  var OPEN={"ja": {"open": "営業中 · {t}まで", "closed": "本日 {t} 開店"}, "en": {"open": "Open now · until {t}", "closed": "Opens at {t}"}, "ko": {"open": "영업 중 · {t}까지", "closed": "오늘 {t} 오픈"}, "zh": {"open": "营业中 · 至 {t}", "closed": "今日 {t} 开始营业"}};
+  // 計測：config.json（自社のピクセル／GA4）を読み込んでから送る。standalone版では読み込まない
+  var CFG=window.__CFG||null;
+  function loadTags(cfg){
+    if(!cfg) return;
+    if(cfg.pixel_id && !window.fbq){ !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js'); fbq('init',cfg.pixel_id); fbq('track','PageView'); }
+    if(cfg.ga4_id && !window.gtag){ var s=document.createElement('script'); s.async=true; s.src='https://www.googletagmanager.com/gtag/js?id='+cfg.ga4_id; document.head.appendChild(s); window.dataLayer=window.dataLayer||[]; window.gtag=function(){dataLayer.push(arguments)}; gtag('js',new Date()); gtag('config',cfg.ga4_id,{store:STORE}); }
+  }
+  if(!CFG && location.protocol!=='file:' && !document.documentElement.hasAttribute('data-standalone')){
+    try{ fetch('../config.json',{cache:'no-store'}).then(function(r){return r.ok?r.json():null}).then(loadTags).catch(function(){}); }catch(e){}
+  } else { loadTags(CFG); }
+  function send(ev){
+    var std={map_click:'FindLocation',reserve_click:'Schedule',phone_click:'Contact'}[ev];
+    try{ if(window.fbq){ fbq('trackCustom',ev,{store:STORE}); if(std) fbq('track',std,{store:STORE}); } }catch(e){}
+    try{ if(window.gtag){ gtag('event',ev,{store:STORE}); } }catch(e){}
+  }
+  document.querySelectorAll('[data-ev]').forEach(function(a){
+    a.addEventListener('click',function(){ send(a.getAttribute('data-ev')); });
+  });
+  var share=document.getElementById('share'), toast=document.getElementById('toast');
+  if(share){ share.addEventListener('click',function(){
+    var data={title:document.title,url:location.href};
+    if(navigator.share){ navigator.share(data).catch(function(){}); return; }
+    try{ navigator.clipboard.writeText(location.href).then(function(){ toast.classList.add('on'); setTimeout(function(){toast.classList.remove('on')},1800); }); }catch(e){}
+  }); }
+  var reels=document.getElementById('reels');
+  if(reels){ reels.querySelectorAll('.reel').forEach(function(card){
+    card.querySelector('.rplay').addEventListener('click',function(e){
+      e.stopPropagation();
+      reels.querySelectorAll('.reel.open').forEach(function(o){ if(o!==card){ o.classList.remove('open'); var f=o.querySelector('iframe'); if(f) f.remove(); o.querySelector('img').style.visibility=''; o.querySelector('.rplay').style.display=''; } });
+      card.classList.add('open');
+      var w=card.querySelector('.rwrap'); var f=document.createElement('iframe');
+      f.src='https://www.instagram.com/reel/'+card.getAttribute('data-code')+'/embed/'; f.setAttribute('allow','autoplay; encrypted-media'); f.setAttribute('allowfullscreen',''); f.title='Instagram';
+      w.appendChild(f); card.querySelector('img').style.visibility='hidden'; card.querySelector('.rplay').style.display='none';
+      setTimeout(function(){ card.scrollIntoView({behavior:'smooth',inline:'start',block:'nearest'}); },260);
+      try{ if(window.gtag) gtag('event','reel_open',{store:STORE,code:card.getAttribute('data-code')}); }catch(err){}
+    });
+  }); }
+  var cta=document.getElementById('cta'), bar=document.getElementById('bar');
+  if('IntersectionObserver' in window){
+    new IntersectionObserver(function(es){ bar.classList.toggle('on', !es[0].isIntersecting); },{threshold:0}).observe(cta);
+  }
+  var hero=document.getElementById('hero'), track=document.getElementById('track'), dots=document.getElementById('dots'), swiped=false, cur=0;
+  if(track && dots){
+    var ds=dots.querySelectorAll('i'), auto=false, AUTO=4000, timer=null, idle=null;
+    var reduce = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var prog=document.createElement('div'); prog.className='bar-progress'; prog.innerHTML='<i></i>'; hero.appendChild(prog); hero.style.setProperty('--auto',AUTO+'ms');
+    function goTo(k){ auto=true; track.scrollTo({left:k*track.clientWidth,behavior:'smooth'}); setTimeout(function(){auto=false;},700); }
+    function start(){ if(reduce) return; stop(); hero.classList.add('running'); timer=setInterval(function(){ goTo((cur+1)%ds.length); },AUTO); }
+    function stop(){ if(timer){ clearInterval(timer); timer=null; } hero.classList.remove('running'); }
+    function pause(){ stop(); clearTimeout(idle); idle=setTimeout(start,9000); }
+    track.addEventListener('scroll',function(){
+      var i=Math.round(track.scrollLeft/track.clientWidth);
+      if(i!==cur){ cur=i; ds.forEach(function(d,k){ d.classList.toggle('on',k===i); });
+        if(!auto && !swiped){ swiped=true; send('hero_swipe'); } }
+    },{passive:true});
+    track.addEventListener('touchstart',pause,{passive:true}); track.addEventListener('pointerdown',pause,{passive:true});
+    ds.forEach(function(d,k){ d.addEventListener('click',function(){ pause(); goTo(k); }); });
+    document.addEventListener('visibilitychange',function(){ if(document.hidden) stop(); else start(); });
+    var hv=document.getElementById('hv'), snd=document.getElementById('snd');
+    if(hv){ hv.muted=true; hv.play().catch(function(){});
+      var sent75=false; hv.addEventListener('timeupdate',function(){ if(!sent75 && hv.duration && hv.currentTime/hv.duration>0.75){ sent75=true; send('video_75'); } });
+      if(snd){ snd.addEventListener('click',function(e){ e.stopPropagation(); hv.muted=!hv.muted; snd.classList.toggle('on',!hv.muted); if(!hv.muted){ hv.play().catch(function(){}); stop(); clearTimeout(idle); } }); }
+      track.addEventListener('scroll',function(){ if(cur!==0 && !hv.muted){ hv.muted=true; snd.classList.remove('on'); } },{passive:true});
+    }
+    AUTO = hv ? 7000 : AUTO; hero.style.setProperty('--auto',AUTO+'ms');
+    start();
+  }
+
+  document.querySelectorAll('[data-en]').forEach(function(el){ el.setAttribute('data-ja', el.textContent); });
+  var LANG='en', sel=document.getElementById('lang');
+  var TITLES={ja:'和牛焼肉食べ放題 肉屋の台所｜A5和牛が食べ放題・東京9店舗',en:'Nikuya no Daidokoro | All-You-Can-Eat A5 Wagyu Yakiniku, Tokyo',ko:'니쿠야노다이도코로｜A5 와규 야키니쿠 무제한・도쿄 9개점',zh:'肉屋の台所｜A5 和牛烤肉任点任吃・东京 9 家门店'};
+  function setLang(l){
+    if(LANGS.indexOf(l)<0) l='en';
+    LANG=l; window.__LANG=l; document.documentElement.lang=(l==='zh'?'zh-Hans':l);
+    document.querySelectorAll('[data-en]').forEach(function(el){
+      var t=el.getAttribute('data-'+l)||el.getAttribute('data-en')||el.getAttribute('data-ja'); if(t) el.textContent=t;
+    });
+    if(sel) sel.value=l;
+    if(TITLES[l]) document.title=TITLES[l];
+    if(window.__applyStore && CUR) window.__applyStore(CUR);
+    renderOpen();
+    try{ if(window.gtag) gtag('event','lang_'+l,{store:STORE}); }catch(e){}
+  }
+  if(sel) sel.addEventListener('change',function(){ setLang(sel.value); });
+
+  var badge=document.getElementById('open-badge');
+  window.__renderOpen=renderOpen;
+  function renderOpen(){
+    if(!badge) return;
+    var m=(badge.getAttribute('data-hours')||'').match(/(\d{1,2}):(\d{2})\D+(\d{1,2}):(\d{2})/);
+    if(!m){ badge.style.display='none'; return; }
+    var now=new Date(); var jst=new Date(now.getTime()+(now.getTimezoneOffset()+540)*60000); var cur=jst.getHours()*60+jst.getMinutes();
+    var o=+m[1]*60+ +m[2], c=+m[3]*60+ +m[4]; if(c<=o) c+=24*60;
+    var open = cur>=o && cur<c || (cur+24*60)>=o && (cur+24*60)<c;
+    badge.className='badge '+(open?'open':'closed');
+    var closeT=m[3]+':'+m[4], openT=m[1]+':'+m[2];
+    var s=OPEN[LANG]||OPEN.en;
+    badge.textContent = open ? s.open.replace('{t}',closeT) : s.closed.replace('{t}',openT);
+  }
+  var q=(location.search.match(/[?&]lang=([a-z]{2})/)||[])[1];
+  var nl=(navigator.language||'').toLowerCase();
+  var nav = nl.indexOf('ja')===0?'ja' : nl.indexOf('ko')===0?'ko' : nl.indexOf('zh')===0?'zh' : 'en';
+  var DEF='auto';
+  // 店舗の決定：?s= → 位置情報（3km以内）→ 既定（新宿東口2号店）
+  var qs=(location.search.match(/[?&]s=([a-z0-9-]+)/)||[])[1];
+  var pre=STORES.filter(function(st){return st.slug===qs;})[0];
+  if(pre){ CUR=pre; }
+  setLang(q||(DEF==='auto'?nav:DEF));
+  if(pre){ applyStore(pre); }
+  else { locate(function(pos){ if(!pos) return; var best=null; STORES.forEach(function(st){ st._d=dist(pos.lat,pos.lng,st.lat,st.lng); if(!best||st._d<best._d) best=st; }); if(best && best._d<3 && best.slug!==CUR.slug){ applyStore(best); try{ if(window.gtag) gtag('event','store_auto',{store:'nikuya-'+best.slug}); }catch(e){} } }); }
+})();
+</script>
+</body>
+</html>

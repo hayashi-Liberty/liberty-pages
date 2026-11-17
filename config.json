@@ -1,0 +1,5 @@
+{
+  "pixel_id": "",
+  "ga4_id": "",
+  "_note": "Liberty所有のMetaピクセルID / GA4測定IDを入れる。先方ピクセルを併用する場合は pixel_id をカンマ区切りで複数指定できるよう index.html の loadTags を拡張する"
+}

@@ -1,0 +1,258 @@
+[
+ {
+  "slug": "shinjuku2",
+  "ja": "新宿東口2号店",
+  "en": "Shinjuku East Exit 2nd",
+  "ko": "신주쿠 동쪽출구 2호점",
+  "zh": "新宿东口2号店",
+  "addr_ja": "東京都新宿区新宿3-18-4 セノビル7F",
+  "addr_en": "Seno Bldg. 7F, 3-18-4 Shinjuku, Shinjuku-ku, Tokyo 160-0022",
+  "zip": "160-0022",
+  "phone": "03-6274-8700",
+  "tel": "+81362748700",
+  "hours": "12:00〜23:00",
+  "hours_note_ja": "定休日なし",
+  "hours_note_en": "Open daily",
+  "cid": "12858076715589662098",
+  "lat": 35.6922778,
+  "lng": 139.7024135,
+  "reserve": "https://www.google.com/maps/reserve/v/dine/c/zCuQLhS3YRQ",
+  "seats": 142,
+  "access_ja": [
+   "JR新宿駅東口から徒歩約5分。新宿通りを伊勢丹方面へ、伊勢丹手前左手のセノビル。エレベーターで7Fへ。",
+   "東京メトロ・都営「新宿三丁目」駅から徒歩約3分。"
+  ],
+  "access_en": [
+   "About 5 min on foot from JR Shinjuku Sta. East Exit. Walk along Shinjuku-dori towards Isetan; Seno Bldg. is on the left before Isetan. Elevator to 7F.",
+   "About 3 min from Shinjuku-sanchome Sta. (Tokyo Metro / Toei)."
+  ],
+  "meta_ja": "セノビル7F・新宿三丁目駅 徒歩3分",
+  "meta_en": "Seno Bldg. 7F · Shinjuku-sanchome Sta. 3 min",
+  "rating": "4.6",
+  "reviews": "724"
+ },
+ {
+  "slug": "shinjuku",
+  "ja": "新宿店",
+  "en": "Shinjuku (Kabukicho)",
+  "ko": "신주쿠점",
+  "zh": "新宿店",
+  "addr_ja": "東京都新宿区歌舞伎町1-6-14 第2ショーリビル2F",
+  "addr_en": "Dai-2 Shori Bldg. 2F, 1-6-14 Kabukicho, Shinjuku-ku, Tokyo 160-0021",
+  "zip": "160-0021",
+  "phone": "050-3187-4197",
+  "tel": "+815031874197",
+  "hours": "12:00〜23:00",
+  "hours_note_ja": "ランチ12:00〜15:00（L.O.14:30）／ディナー15:00〜23:00（L.O.22:30）",
+  "hours_note_en": "Lunch 12:00–15:00 (L.O. 14:30) · Dinner 15:00–23:00 (L.O. 22:30)",
+  "cid": "11479817190024571437",
+  "lat": 35.6936825,
+  "lng": 139.7029733,
+  "reserve": "https://booking.ebica.jp/webrsv/search/e014039601/17822?isfixshop=true",
+  "seats": 100,
+  "access_ja": [
+   "JR新宿駅東口から徒歩約5分。ALTA脇の道を直進し靖国通りを渡り、ドン・キホーテ側を右へ。"
+  ],
+  "access_en": [
+   "About 5 min from JR Shinjuku Sta. East Exit. Cross Yasukuni-dori toward Don Quijote; the building is on the lane with the Seven Bank ATM. 2F."
+  ],
+  "meta_ja": "歌舞伎町・新宿駅東口 徒歩5分",
+  "meta_en": "Kabukicho · 5 min from Shinjuku Sta. East Exit"
+ },
+ {
+  "slug": "ginza",
+  "ja": "Ginza Premium",
+  "en": "Ginza Premium",
+  "ko": "긴자 프리미엄",
+  "zh": "银座 Premium",
+  "addr_ja": "東京都中央区銀座7-12-4 友野本社ビル1F",
+  "addr_en": "Tomono Honsha Bldg. 1F, 7-12-4 Ginza, Chuo-ku, Tokyo 104-0061",
+  "zip": "104-0061",
+  "phone": "03-3545-0707",
+  "tel": "+81335450707",
+  "hours": "12:00〜23:00",
+  "hours_note_ja": "L.O.22:30・定休日なし",
+  "hours_note_en": "L.O. 22:30 · Open daily",
+  "cid": "6218403581437500298",
+  "lat": 35.6683633,
+  "lng": 139.7642296,
+  "reserve": "https://booking.ebica.jp/webrsv/search/e014039601/34644?isfixshop=true",
+  "seats": 38,
+  "access_ja": [
+   "東銀座駅A1出口から徒歩5分、銀座駅A3出口から徒歩6分、新橋駅汐留口から徒歩9分。"
+  ],
+  "access_en": [
+   "5 min from Higashi-Ginza Sta. Exit A1 · 6 min from Ginza Sta. Exit A3 · 9 min from Shimbashi Sta."
+  ],
+  "meta_ja": "銀座・東銀座駅 徒歩5分",
+  "meta_en": "Ginza · 5 min from Higashi-Ginza Sta."
+ },
+ {
+  "slug": "gotanda",
+  "ja": "五反田店",
+  "en": "Gotanda",
+  "ko": "고탄다점",
+  "zh": "五反田店",
+  "addr_ja": "東京都品川区西五反田1-5-2 トラヤビル4F",
+  "addr_en": "Toraya Bldg. 4F, 1-5-2 Nishi-Gotanda, Shinagawa-ku, Tokyo 141-0031",
+  "zip": "141-0031",
+  "phone": "050-3172-5301",
+  "tel": "+815031725301",
+  "hours": "12:00〜23:00",
+  "hours_note_ja": "平日はランチ12:00〜15:00／ディナー16:00〜23:00（L.O.22:30）",
+  "hours_note_en": "Weekdays: lunch 12:00–15:00, dinner 16:00–23:00 (L.O. 22:30). Weekends 12:00–23:00",
+  "cid": "9566845038989951723",
+  "lat": 35.6254686,
+  "lng": 139.7235796,
+  "reserve": "https://booking.ebica.jp/webrsv/search/e014039601/17831?isfixshop=true",
+  "seats": 108,
+  "access_ja": [
+   "五反田駅西口から徒歩1分。"
+  ],
+  "access_en": [
+   "1 min from Gotanda Sta. West Exit. 4F."
+  ],
+  "meta_ja": "五反田駅西口 徒歩1分",
+  "meta_en": "1 min from Gotanda Sta."
+ },
+ {
+  "slug": "shibuya-dogenzaka",
+  "ja": "渋谷道玄坂店",
+  "en": "Shibuya Dogenzaka",
+  "ko": "시부야 도겐자카점",
+  "zh": "涩谷道玄坂店",
+  "addr_ja": "東京都渋谷区道玄坂2-25-17 カスミビル3F",
+  "addr_en": "Kasumi Bldg. 3F, 2-25-17 Dogenzaka, Shibuya-ku, Tokyo 150-0043",
+  "zip": "150-0043",
+  "phone": "050-3138-2095",
+  "tel": "+815031382095",
+  "hours": "12:00〜23:00",
+  "hours_note_ja": "平日は13:00〜23:00（L.O.22:30）",
+  "hours_note_en": "Weekdays 13:00–23:00, weekends 12:00–23:00 (L.O. 22:30)",
+  "cid": "799068617536808917",
+  "lat": 35.659583,
+  "lng": 139.6976588,
+  "reserve": "https://booking.ebica.jp/webrsv/search/e014039601/17823?isfixshop=true",
+  "seats": 52,
+  "access_ja": [
+   "JR・東急・京王井の頭線・地下鉄 渋谷駅から徒歩5分。"
+  ],
+  "access_en": [
+   "5 min from Shibuya Sta. (JR / Tokyu / Keio / Metro), up Dogenzaka. 3F."
+  ],
+  "meta_ja": "渋谷駅 徒歩5分",
+  "meta_en": "5 min from Shibuya Sta."
+ },
+ {
+  "slug": "shibuya-miyamasuzaka",
+  "ja": "渋谷宮益坂店",
+  "en": "Shibuya Miyamasuzaka",
+  "ko": "시부야 미야마스자카점",
+  "zh": "涩谷宫益坂店",
+  "addr_ja": "東京都渋谷区渋谷1-25-6 渋谷パークサイド共同ビル5F",
+  "addr_en": "Shibuya Parkside Kyodo Bldg. 5F, 1-25-6 Shibuya, Shibuya-ku, Tokyo 150-0002",
+  "zip": "150-0002",
+  "phone": "050-3172-5309",
+  "tel": "+815031725309",
+  "hours": "12:00〜23:00",
+  "hours_note_ja": "ランチ12:00〜15:00（L.O.14:30）／ディナー15:00〜23:00（L.O.22:30）",
+  "hours_note_en": "Lunch 12:00–15:00 (L.O. 14:30) · Dinner 15:00–23:00 (L.O. 22:30)",
+  "cid": "10363252934106939638",
+  "lat": 35.659629,
+  "lng": 139.701511,
+  "reserve": "https://booking.ebica.jp/webrsv/search/e014039601/17824?isfixshop=true",
+  "seats": 100,
+  "access_ja": [
+   "JR渋谷駅ハチ公口から徒歩1分、東京メトロ渋谷駅A7b出口すぐ。"
+  ],
+  "access_en": [
+   "1 min from JR Shibuya Sta. Hachiko Exit · right by Metro Exit A7b. 5F."
+  ],
+  "meta_ja": "渋谷駅ハチ公口 徒歩1分",
+  "meta_en": "1 min from Shibuya Sta. Hachiko Exit"
+ },
+ {
+  "slug": "iidabashi",
+  "ja": "飯田橋店",
+  "en": "Iidabashi",
+  "ko": "이다바시점",
+  "zh": "饭田桥店",
+  "addr_ja": "東京都千代田区飯田橋4-9-8 飯田橋プラザ8F",
+  "addr_en": "Iidabashi Plaza 8F, 4-9-8 Iidabashi, Chiyoda-ku, Tokyo 102-0072",
+  "zip": "102-0072",
+  "phone": "050-3172-4718",
+  "tel": "+815031724718",
+  "hours": "12:00〜23:00",
+  "hours_note_ja": "ランチ12:00〜15:00（L.O.14:30）／ディナー15:00〜23:00（L.O.22:30）",
+  "hours_note_en": "Lunch 12:00–15:00 (L.O. 14:30) · Dinner 15:00–23:00 (L.O. 22:30)",
+  "cid": "3790562100717791509",
+  "lat": 35.701528,
+  "lng": 139.745223,
+  "reserve": "https://booking.ebica.jp/webrsv/search/e014039601/17828?isfixshop=true",
+  "seats": 100,
+  "access_ja": [
+   "JR飯田橋駅東口から30秒、地下鉄A4出口から30秒。"
+  ],
+  "access_en": [
+   "30 sec from JR Iidabashi Sta. East Exit · 30 sec from Metro Exit A4. 8F."
+  ],
+  "meta_ja": "飯田橋駅東口 30秒",
+  "meta_en": "30 sec from Iidabashi Sta."
+ },
+ {
+  "slug": "ueno",
+  "ja": "上野店",
+  "en": "Ueno",
+  "ko": "우에노점",
+  "zh": "上野店",
+  "addr_ja": "東京都台東区上野6-14-7 ベリタス岡埜栄泉ビル7F",
+  "addr_en": "Veritas Okano Eisen Bldg. 7F, 6-14-7 Ueno, Taito-ku, Tokyo 110-0005",
+  "zip": "110-0005",
+  "phone": "050-3172-5085",
+  "tel": "+815031725085",
+  "hours": "12:00〜23:00",
+  "hours_note_ja": "ランチ12:00〜15:00（L.O.14:30）／ディナー15:00〜23:00（L.O.22:30）",
+  "hours_note_en": "Lunch 12:00–15:00 (L.O. 14:30) · Dinner 15:00–23:00 (L.O. 22:30)",
+  "cid": "18330822691881822043",
+  "lat": 35.7113473,
+  "lng": 139.7756144,
+  "reserve": "https://booking.ebica.jp/webrsv/search/e014039601/17827?isfixshop=true",
+  "seats": 70,
+  "access_ja": [
+   "JR上野駅・地下鉄各線から徒歩1分、御徒町駅から徒歩8分。"
+  ],
+  "access_en": [
+   "1 min from JR Ueno Sta. (and Metro) · 8 min from Okachimachi Sta. 7F."
+  ],
+  "meta_ja": "上野駅 徒歩1分",
+  "meta_en": "1 min from Ueno Sta."
+ },
+ {
+  "slug": "ueno-koenmae",
+  "ja": "上野公園前店",
+  "en": "Ueno Park",
+  "ko": "우에노공원앞점",
+  "zh": "上野公园前店",
+  "addr_ja": "東京都台東区上野4-9-6 ナガフジビル7F",
+  "addr_en": "Nagafuji Bldg. 7F, 4-9-6 Ueno, Taito-ku, Tokyo 110-0005",
+  "zip": "110-0005",
+  "phone": "050-3172-4945",
+  "tel": "+815031724945",
+  "hours": "12:00〜23:00",
+  "hours_note_ja": "平日はランチ12:00〜15:00／ディナー16:00〜23:00（L.O.22:30）",
+  "hours_note_en": "Weekdays: lunch 12:00–15:00, dinner 16:00–23:00 (L.O. 22:30). Weekends 12:00–23:00",
+  "cid": "14189666644672347975",
+  "lat": 35.7101779,
+  "lng": 139.7740539,
+  "reserve": "https://booking.ebica.jp/webrsv/search/e014039601/20754?isfixshop=true",
+  "seats": 124,
+  "access_ja": [
+   "京成上野駅から徒歩1分、上野御徒町駅から徒歩2分、JR上野駅不忍口から徒歩3分。"
+  ],
+  "access_en": [
+   "1 min from Keisei-Ueno Sta. · 2 min from Ueno-Okachimachi Sta. · 3 min from JR Ueno Sta. Shinobazu Exit. 7F."
+  ],
+  "meta_ja": "京成上野駅 徒歩1分",
+  "meta_en": "1 min from Keisei-Ueno Sta."
+ }
+]
